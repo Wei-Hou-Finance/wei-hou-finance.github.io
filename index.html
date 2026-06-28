@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wei Hou Homepage Preview</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #2f3137;
+        --muted: #646b76;
+        --accent: #244f8f;
+        --rule: #e5e7eb;
+        --max: 900px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15.5px;
+        line-height: 1.55;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 0.18em;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.94);
+        border-bottom: 1px solid rgba(222, 216, 207, 0.65);
+      }
+
+      .nav {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 18px 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        align-items: center;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+        font-weight: 700;
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      .brand-logo {
+        width: auto;
+        height: 34px;
+        display: block;
+      }
+
+      .links {
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+      }
+
+      .links a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 14.5px;
+      }
+
+      main,
+      footer {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      section {
+        padding: 34px 0;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 38px;
+        align-items: center;
+        padding-top: 42px;
+      }
+
+      .photo {
+        width: 100%;
+        aspect-ratio: 30 / 31;
+        object-fit: cover;
+        border-radius: 14px;
+        border: 1px solid var(--rule);
+        box-shadow: 0 12px 32px rgba(35, 38, 45, 0.08);
+        display: block;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: 38px;
+        line-height: 1.1;
+        margin-bottom: 18px;
+        font-weight: 700;
+      }
+
+      h2 {
+        color: #2e2d6d;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        font-size: 17px;
+        margin-bottom: 4px;
+      }
+
+      h3 a {
+        color: var(--text);
+        text-decoration-color: var(--text);
+      }
+
+      .intro p {
+        margin-bottom: 8px;
+      }
+
+      .divider {
+        border-top: 1px solid var(--rule);
+      }
+
+      .group {
+        margin-top: 22px;
+      }
+
+      .group:first-of-type {
+        margin-top: 0;
+      }
+
+      .label {
+        color: var(--muted);
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+
+      .item {
+        padding: 8px 0 16px;
+      }
+
+      .meta {
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+
+      .abstract {
+        margin-top: 8px;
+      }
+
+      .presentations {
+        margin-top: 8px;
+      }
+
+      .scheduled {
+        color: var(--muted);
+        font-style: italic;
+      }
+
+      footer {
+        color: var(--muted);
+        padding-top: 28px;
+        padding-bottom: 36px;
+        border-top: 1px solid var(--rule);
+      }
+
+      @media (max-width: 720px) {
+        .nav {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 22px;
+        }
+
+        .photo {
+          width: min(210px, 58vw);
+        }
+
+        h1 {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="#top">
+          <img
+            class="brand-logo"
+            src="assets/erasmus-logo.svg"
+            alt="Erasmus University Rotterdam"
+          >
+          <span>Wei Hou</span>
+        </a>
+        <div class="links">
+          <a href="#research">Research</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <img class="photo" src="assets/pics_Wei.PNG" alt="Portrait of Wei Hou">
+
+        <div class="intro">
+          <h1>Wei Hou</h1>
+          <p>Thanks for visiting my homepage.</p>
+          <p>
+            I am a PhD student in Finance at Erasmus School of Economics,
+            Erasmus University Rotterdam.
+          </p>
+          <p>
+            My research interests are in empirical corporate finance. More
+            specifically, I study issues related to corporate governance, labor,
+            and gender.
+          </p>
+          <p>I will be on the 2026/2027 academic job market.</p>
+          <p>Here is my <a href="#">CV</a>.</p>
+          <p id="contact">
+            You can contact me at
+            <a href="mailto:hou@ese.eur.nl">hou@ese.eur.nl</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="divider" id="research">
+        <h2>Research</h2>
+
+        <div class="group">
+          <p class="label">Working Papers</p>
+          <article class="item">
+            <h3>On the Program: A Gender Equality Initiative and Professional Visibility at Academic Conferences</h3>
+            <p class="meta">
+              with Marina Gertsberg, Esad Smajlbegovic, Daniel Urban, and Patrick Verwijmeren
+            </p>
+            <p class="meta">Revise and Resubmit, Research Policy</p>
+            <p class="abstract">
+              <strong>Abstract:</strong> Persistent gender disparities characterize scientific careers.
+              We study a gender equality initiative implemented at a leading academic conference,
+              a key stage where visibility, reputation, and professional networks are shaped.
+              Using a difference-in-differences design comparing two major conferences within
+              the same discipline, we show that a time-limited initiative encouraging the
+              appointment of women as paper discussants led to a sharp but temporary increase
+              in female representation in this prestigious role. The increase did not come at
+              the expense of quality. However, the initiative primarily affected already
+              well-established women, with more limited gains for junior scholars.
+            </p>
+            <p class="presentations">
+              <strong>Selected Presentations:</strong> ESE Cheapthrills 2024,
+              TU Munich 2025, University of Melbourne 2025, FBA Conference 2025.
+            </p>
+          </article>
+
+          <article class="item">
+            <h3>Noncompete Agreements and the Internal Allocation of Human Capital</h3>
+            <p class="meta">Solo-authored</p>
+            <p class="abstract">
+              <strong>Abstract:</strong> This paper studies how labor market frictions shape
+              firms' investment in and internal allocation of human capital. Exploiting staggered
+              state-level increases in the enforceability of noncompete agreements, I show that
+              tighter mobility restrictions shift firms toward internal labor markets, increasing
+              lateral job-function transfers and internal promotions. The effects are strongest
+              where local labor supply is thin, suggesting substitution between internal and
+              external labor markets.
+            </p>
+            <p class="presentations">
+              <strong>Selected Presentations:</strong> Tinbergen Institute Jamboree,
+              ESE Cheap Thrills, Spanish Finance Forum PhD Day
+              <span class="scheduled">(scheduled)</span>, Corporate Finance Day 2026
+              <span class="scheduled">(scheduled)</span>, and 7th RCF-ECGI Conference
+              <span class="scheduled">(scheduled)</span>.
+            </p>
+          </article>
+        </div>
+
+        <div class="group">
+          <p class="label">Publication</p>
+          <article class="item">
+            <h3>
+              <a href="https://www.sciencedirect.com/science/article/pii/S092753982500074X">
+                Ranking finance conferences: An update
+              </a>
+            </h3>
+            <p class="meta">Wei Hou, Esad Smajlbegovic, and Daniel Urban</p>
+            <p class="meta">Journal of Empirical Finance, 2025</p>
+            <p class="meta">
+              DOI:
+              <a href="https://doi.org/10.1016/j.jempfin.2025.101652">
+                10.1016/j.jempfin.2025.101652
+              </a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="divider" id="teaching">
+        <h2>Teaching</h2>
+
+        <article class="item">
+          <h3>Thesis Supervisor, Department of Business Economics</h3>
+          <p class="meta">FEM11067: Master's Thesis Financial Economics</p>
+          <p class="meta">FEB13100: Bachelor Thesis</p>
+          <p class="meta">2024-2027, Erasmus School of Economics</p>
+        </article>
+
+        <article class="item">
+          <h3>Teaching Assistant, Department of Business Economics</h3>
+          <p class="meta">FEM11118: Advanced Corporate Finance and Governance</p>
+          <p class="meta">Fall 2024-2027, Erasmus School of Economics</p>
+          <p class="meta">Average course rating: 8.5/10</p>
+          <p class="meta">Average student rating: 4.4/5</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Wei Hou</p>
+    </footer>
+  </body>
+</html>
