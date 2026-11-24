@@ -250,6 +250,24 @@
           font-size: 30px;
         }
       }
+      .paper-details {
+        margin-top: 10px;
+      }
+
+      .paper-details summary {
+        width: fit-content;
+        color: var(--accent);
+        cursor: pointer;
+      }
+
+      .paper-figure {
+        display: block;
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+        margin: 16px 0 8px;
+      }
+
     </style>
   </head>
   <body>
@@ -314,9 +332,16 @@
             </h3>
             <p class="meta">Solo-authored</p>
             <p class="meta"><em>Semifinalist for Best Paper Award in Corporate Finance, FMA 2026</em></p>
-            <p class="abstract">
-              <strong>Abstract:</strong> Noncompete agreements (NCAs) make it harder for workers to leave, but also harder for firms to hire. Combining employee career histories from Revelio Labs with staggered state-level increases in NCA enforceability, I examine how firms respond to restrictions on external labor mobility. Using a stacked difference-in-differences design, I find that stronger enforceability increases internal promotions and occupational reallocation. These effects are particularly pronounced among firms reporting NCA use. However, promoted employees experience more frequent promotion reversals and fewer subsequent promotions. Firms also increase investment in knowledge capital, while sales per employee decline, especially in labor-intensive firms. The findings suggest that restrictions on external mobility shift human capital allocation toward internal labor markets, potentially at the cost of labor productivity.
-            </p>
+            <details class="paper-details">
+              <summary>Abstract and figure</summary>
+              <p class="abstract">
+                <strong>Abstract:</strong> Noncompete agreements (NCAs) make it harder for workers to leave, but also harder for firms to hire. Combining employee career histories from Revelio Labs with staggered state-level increases in NCA enforceability, I examine how firms respond to restrictions on external labor mobility. Using a stacked difference-in-differences design, I find that stronger enforceability increases internal promotions and occupational reallocation. These effects are particularly pronounced among firms reporting NCA use. However, promoted employees experience more frequent promotion reversals and fewer subsequent promotions. Firms also increase investment in knowledge capital, while sales per employee decline, especially in labor-intensive firms. The findings suggest that restrictions on external mobility shift human capital allocation toward internal labor markets, potentially at the cost of labor productivity.
+              </p>
+              <a href="assets/promotion.png">
+                <img class="paper-figure" src="assets/promotion.png" width="1600" height="960"
+                  alt="Probability of internal promotion around increases in noncompete enforceability" loading="lazy">
+              </a>
+            </details>
             <p class="presentations">
               <strong>Selected Presentations:</strong> Tinbergen Institute Jamboree,
               ESE Cheap Thrills, Spanish Finance Forum PhD Day, FMA 2026,
@@ -341,26 +366,33 @@
               and <a href="https://sites.google.com/site/patrickverwijmeren/" target="_blank" rel="noopener">Patrick Verwijmeren</a>
             </p>
             <p class="meta">Revise and Resubmit, <strong><em>Research Policy</em></strong></p>
-            <p class="abstract">
-              <strong>Abstract:</strong> Persistent gender disparities characterize scientific careers.
-              We study a gender equality initiative implemented at a leading academic conference,
-              a key stage in researchers' careers where visibility, reputation, and professional
-              networks are shaped. Using a difference-in-differences design that compares two
-              major conferences within the same discipline, we show that a time-limited initiative
-              encouraging the appointment of women as paper discussants led to a sharp but temporary
-              increase in female representation in this prestigious role. The increase did not come
-              at the expense of quality: female discussants on the conference program during the
-              initiative had stronger publication records and comparable expertise-paper matches.
-              The initiative increased female representation across the seniority distribution,
-              with the largest gains among senior women, where pre-initiative underrepresentation
-              was most severe. Senior women also took on a disproportionate number of conference
-              roles. Over time, the pool of selected women broadened modestly to include scholars
-              from lower-ranked institutions, and matched evidence is consistent with subsequent
-              recognition gains for both senior and junior women. Our findings show that
-              leadership-driven gender equality initiatives can meaningfully alter representation
-              in high-profile academic roles, but that their effects are not necessarily
-              self-sustaining.
-            </p>
+            <details class="paper-details">
+              <summary>Abstract and figure</summary>
+              <p class="abstract">
+                <strong>Abstract:</strong> Persistent gender disparities characterize scientific careers.
+                We study a gender equality initiative implemented at a leading academic conference,
+                a key stage in researchers' careers where visibility, reputation, and professional
+                networks are shaped. Using a difference-in-differences design that compares two
+                major conferences within the same discipline, we show that a time-limited initiative
+                encouraging the appointment of women as paper discussants led to a sharp but temporary
+                increase in female representation in this prestigious role. The increase did not come
+                at the expense of quality: female discussants on the conference program during the
+                initiative had stronger publication records and comparable expertise-paper matches.
+                The initiative increased female representation across the seniority distribution,
+                with the largest gains among senior women, where pre-initiative underrepresentation
+                was most severe. Senior women also took on a disproportionate number of conference
+                roles. Over time, the pool of selected women broadened modestly to include scholars
+                from lower-ranked institutions, and matched evidence is consistent with subsequent
+                recognition gains for both senior and junior women. Our findings show that
+                leadership-driven gender equality initiatives can meaningfully alter representation
+                in high-profile academic roles, but that their effects are not necessarily
+                self-sustaining.
+              </p>
+              <a href="assets/conference-visibility.png">
+                <img class="paper-figure" src="assets/conference-visibility.png" width="1350" height="810"
+                  alt="Female representation at the AFA and WFA conferences, 2013–2023" loading="lazy">
+              </a>
+            </details>
             <p class="presentations">
               <strong>Selected Presentations:</strong> ESE Cheapthrills 2024,
               TU Munich 2025, University of Melbourne 2025, FBA Conference 2025.
@@ -373,7 +405,14 @@
           <article class="item">
             <h3>Mandatory Salary Disclosure and Firms’ Use of Job Postings</h3>
             <p class="meta">with <a href="https://chris-hongye-yang.com/" target="_blank" rel="noopener">Chris Hongye Yang</a></p>
-            <p class="abstract">We examine mandatory salary disclosure and firms’ use of job postings. We utilize the staggered adoption of salary-disclosure mandates across six U.S. jurisdictions and find increased salary disclosure but lower posting-hiring alignment: a smaller share of realized hires is preceded by a matching public posting. We further find that the share of anonymous job postings increases, consistent with firms relying less on public postings while continuing to hire. Our findings suggest that salary-disclosure mandates increase the information disclosed within job postings while reducing firms’ use of employer-identified public postings, thereby narrowing the public information available about firms’ labor demand.</p>
+            <details class="paper-details">
+              <summary>Abstract and figure</summary>
+              <p class="abstract">We examine mandatory salary disclosure and firms’ use of job postings. We utilize the staggered adoption of salary-disclosure mandates across six U.S. jurisdictions and find increased salary disclosure but lower posting-hiring alignment: a smaller share of realized hires is preceded by a matching public posting. We further find that the share of anonymous job postings increases, consistent with firms relying less on public postings while continuing to hire. Our findings suggest that salary-disclosure mandates increase the information disclosed within job postings while reducing firms’ use of employer-identified public postings, thereby narrowing the public information available about firms’ labor demand.</p>
+              <a href="assets/pay-transparency-benchmark.png">
+                <img class="paper-figure" src="assets/pay-transparency-benchmark.png" width="1350" height="1094"
+                  alt="Effects of salary disclosure mandates on disclosure and posting-hiring alignment" loading="lazy">
+              </a>
+            </details>
           </article>
         </div>
 
